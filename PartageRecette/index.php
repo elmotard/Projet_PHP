@@ -3,8 +3,13 @@
 	require_once ('config.inc.php');
 	require_once ('./application/libraries/smarty/libs/Smarty.class.php');
 
-	$current_page = $_GET['page'];
+	$current_page = '';
 
+	if (isset($_GET['page']))
+	{
+		$current_page = $_GET['page'];
+	}
+	
 	if ($current_page == '')
 	{
 		echo 'Error 404';

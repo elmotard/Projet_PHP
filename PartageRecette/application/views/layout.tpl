@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-
-	<header>
+<header>
 		{include './layout/layout_entete.inc.tpl'}
-	<header>
+</header>
 
+<html>
+	
 	<body>
-		{block name='profil'}{/block}
+		{block name='accueil'}{/block}
+        {block name='connexion'}{/block}
+        {block name='profil'}{/block}
+        {block name='recette'}{/block}
+        {block name='recette_detail'}{/block}
+        {block name='recette_liste'}{/block}
 	</body>
 
 </html>
